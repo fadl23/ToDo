@@ -1,9 +1,9 @@
-from rest_framework import generics ,filters
+from rest_framework import generics, filters
 from rest_framework import permissions
-from .pagination import  TodoList_LO,Product_PN
-from ..models import Todo,Productivity
-from .serializers import ToDoSer ,ProductSer
 
+from .pagination import TodoList_LO, Product_PN
+from .serializers import ToDoSer, ProductSer
+from ..models import Todo, Productivity
 
 
 class TodoList(generics.ListCreateAPIView):
